@@ -1,0 +1,15 @@
+*           {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Century Gothic', sans-serif;
+    color: white;
+}
+
+html            {
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+body                {
+    background: #0a0a0a;
+}
