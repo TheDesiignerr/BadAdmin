@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php include_once '../../includes/packages/isLogged.php' ?>
-<?php include_once '../../includes/model/loadSales.php' ?>
+<?php include_once '../../includes/model/loadItems.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,28 +19,22 @@
     <main>
         <div class="mainWrapper">
             <div class="mainContainer">
-                <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Date</th>
-                    </tr>
-                    <?php
-                    $table = loadSales();
-                    
-                    while ($row = mysqli_fetch_assoc($table)) {
+                <?php
+                    $table = loadItems();
+
+                    while($row = mysqli_fetch_assoc($table)) {
                         echo 
                         '
-                        <tr>
-                            <td>'.$row['itemName'].'</td>
-                            <td>'.$row['itemPrice'].'</td>
-                            <td>'.$row['time'].'</td>
-                        </tr>
+                        <div class="panelBox">
+                            <h1 class="panelTitle">'.$row['itemName'].'</h1>
+                            <img src="'.$row['itemIcon'].'" class="itemIcon">
+                            <h2 class="panelPrice">'.$row['itemPrice'].' EGP</h2>
+                            <h2 class="panelAmount">QTY '.$row['itemAmount'].'</h2>
+                        </div>
                         '
                         ;
                     }
-                    ?>
-                </table>
+                ?>
             </div>
         </div>
     </main>

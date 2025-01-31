@@ -17,8 +17,8 @@ header              {
 }
 
 .panelBox           {
-    width: 9rem;
-    height: 9rem;
+    width: 10rem;
+    height: 13rem;
     padding: .4rem;
     margin: .2rem;
     border: thin solid #0044d8;
@@ -29,7 +29,103 @@ header              {
     display: inline-block;
 }
 
+.panelPrice,
+.panelAmount         {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
 .boxIcon            {
     width: 5.4rem;
     padding: .5rem;
+}
+
+.itemIcon            {
+    height: 5.4rem;
+    padding: .5rem;
+}
+
+/* -------------------- SALES PAGE STYLE ------------------- */
+
+table           {
+    text-align: center;
+    border-collapse: collapse;
+
+}
+
+th      {
+    padding: .3rem 1.5rem .3rem 1.5rem;
+    background: #0044d8;
+    font-weight: 600;
+    border: rgba(255, 255, 255, 0.356) thin solid;
+}
+
+td          {
+    border-collapse: collapse;
+    border: #0044d8 thin solid;
+    padding: .3rem 1.5rem .3rem 1.5rem;
+
+}
+
+.sellButton         {
+    text-decoration: none;
+    font-weight: 600;
+    background: #1caa00;
+    padding: .2rem 2rem;
+    border-radius: .5rem;
+}
+
+/* --------------------- INVENTORY STYLES ---------------------- */
+
+.formTitle              {
+    text-align: center;
+}
+
+.formSub              {
+    font-weight: 100;
+    opacity: .7;
+    font-size: 1rem;
+    text-align: center;
+}
+
+form            {
+    text-align: center;
+}
+
+input           {
+    outline: none;
+    background: #ffffff1c;
+    border: thin solid white;
+    font-size: 1.1rem;
+    padding: .3rem;
+    margin: .1rem;
+    border-radius: .6rem;
+}
+
+button          {
+    outline: none;
+    background: #0b4cff;
+    border: thin solid #0b4cff;
+    font-size: 1.1rem;
+    padding: .3rem 3rem;
+    margin: .9rem;
+    border-radius: .6rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.301);
+    transition: .3s;
+}
+
+button:active,
+button:hover            {
+    background: #3168ff;
+}
+
+
+.btn            {
+    background: #0044d8;
+    padding: .3rem;
+    text-align: center;
+    display: block;
+    border-radius: .4rem;
+    margin: .8rem 0;
+    text-decoration: none;
 }

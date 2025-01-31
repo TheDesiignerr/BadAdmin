@@ -20,7 +20,7 @@
             <div class="mainContainer">
                 <div class="panelBox">
                     <h1 class="panelTitle">Sales</h1>
-                    <a href="" class="iconLink">
+                    <a href="../sales/" class="iconLink">
                         <img src="../../assets/icons/sales.png" class="boxIcon">
                     </a>
                 </div>
@@ -36,7 +36,7 @@
 
                 <div class="panelBox">
                     <h1 class="panelTitle">Inventory</h1>
-                    <a href="" class="iconLink">
+                    <a href="../inventory/" class="iconLink">
                         <img src="../../assets/icons/inv.png" class="boxIcon">
                     </a>
                 </div>
@@ -52,7 +52,7 @@
 
                 <div class="panelBox">
                     <h1 class="panelTitle">Sell</h1>
-                    <a href="" class="iconLink">
+                    <a href="../sell/" class="iconLink">
                         <img src="../../assets/icons/sell.png" class="boxIcon">
                     </a>
                 </div>
@@ -74,9 +74,9 @@
                 </div>
 
                 <div class="panelBox">
-                    <h1 class="panelTitle">Admin</h1>
-                    <a href="" class="iconLink">
-                        <img src="../../assets/icons/admin.png" class="boxIcon">
+                    <h1 class="panelTitle">Recipt</h1>
+                    <a href="../recipt/" class="iconLink">
+                        <img src="../../assets/icons/recipt.png" class="boxIcon">
                     </a>
                 </div>
             </div>
