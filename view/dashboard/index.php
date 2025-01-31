@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+<?php include_once '../../includes/packages/isLogged.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,27 +20,64 @@
             <div class="mainContainer">
                 <div class="panelBox">
                     <h1 class="panelTitle">Sales</h1>
-                    <img src="../../assets/icons/sales.png" class="boxIcon">
+                    <a href="" class="iconLink">
+                        <img src="../../assets/icons/sales.png" class="boxIcon">
+                    </a>
                 </div>
 
                 <div class="panelBox">
                     <h1 class="panelTitle">Vault</h1>
-                    <img src="../../assets/icons/vault.png" class="boxIcon">
-                    
+                    <a href="" class="iconLink">
+                        <img src="../../assets/icons/vault.png" class="boxIcon">
+                    </a>
                 </div>
 
                 <br>
 
                 <div class="panelBox">
                     <h1 class="panelTitle">Inventory</h1>
-                    <img src="../../assets/icons/inv.png" class="boxIcon">
-
+                    <a href="" class="iconLink">
+                        <img src="../../assets/icons/inv.png" class="boxIcon">
+                    </a>
                 </div>
 
                 <div class="panelBox">
                     <h1 class="panelTitle">Notes</h1>
-                    <img src="../../assets/icons/notes.png" class="boxIcon">
+                    <a href="" class="iconLink">
+                        <img src="../../assets/icons/notes.png" class="boxIcon">
+                    </a>
+                </div>
 
+                <br>
+
+                <div class="panelBox">
+                    <h1 class="panelTitle">Sell</h1>
+                    <a href="" class="iconLink">
+                        <img src="../../assets/icons/sell.png" class="boxIcon">
+                    </a>
+                </div>
+
+                <div class="panelBox">
+                    <h1 class="panelTitle">Buy</h1>
+                    <a href="" class="iconLink">
+                        <img src="../../assets/icons/buy.png" class="boxIcon">
+                    </a>
+                </div>
+
+                <br>
+
+                <div class="panelBox">
+                    <h1 class="panelTitle">Logout</h1>
+                    <a href="" class="iconLink">
+                        <img src="../../assets/icons/logout.png" class="boxIcon">
+                    </a>
+                </div>
+
+                <div class="panelBox">
+                    <h1 class="panelTitle">Admin</h1>
+                    <a href="" class="iconLink">
+                        <img src="../../assets/icons/admin.png" class="boxIcon">
+                    </a>
                 </div>
             </div>
         </div>
