@@ -19,6 +19,9 @@
     <main>
         <div class="mainWrapper">
             <div class="mainContainer">
+
+                    <a href="../dashboard/" class="iconLink" style="font-size: 1.5rem;">go back</a>
+
                 <table>
                     <tr>
                         <th>Name</th>

@@ -68,7 +68,7 @@
 
                 <div class="panelBox">
                     <h1 class="panelTitle">Logout</h1>
-                    <a href="" class="iconLink">
+                    <a href="../logout/" class="iconLink">
                         <img src="../../assets/icons/logout.png" class="boxIcon">
                     </a>
                 </div>

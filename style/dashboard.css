@@ -3,6 +3,7 @@ header              {
     padding: 1.5rem .5rem;
     background: #0044d8;
     margin: 0 0 3rem 0;
+    color: white;
 }
 
 .headerSub              {
@@ -14,19 +15,21 @@ header              {
 .mainWrapper            {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .panelBox           {
+    color: black;
     width: 10rem;
     height: 13rem;
     padding: .4rem;
     margin: .2rem;
-    border: thin solid #0044d8;
+    border: thin solid #ffffff8a;
     border-radius: .6rem;
-    box-shadow: 0 0 2rem .3rem #0044d8;
-    background: #0044d8;
+    background: #ffffff1a;
     text-align: center;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
 }
 
 .panelPrice,
@@ -70,8 +73,9 @@ td          {
 .sellButton         {
     text-decoration: none;
     font-weight: 600;
+    font-size: 1.5rem;
     background: #1caa00;
-    padding: .2rem 2rem;
+    padding: .4rem 3rem;
     border-radius: .5rem;
 }
 

@@ -33,6 +33,13 @@
                 </div>
 
                 <br>
+
+                <div class="panelBox">
+                    <h1 class="panelTitle">Back</h1>
+                    <a href="../dashboard/" class="iconLink">
+                        <img src="../../assets/icons/back.png" class="boxIcon">
+                    </a>
+                </div>
             </div>
         </div>
     </main>

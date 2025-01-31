@@ -19,8 +19,18 @@
     <main>
         <div class="mainWrapper">
             <div class="mainContainer">
+
+                <div class="panelBox">
+                    <h1 class="panelTitle">Back</h1>
+                    <a href="../inventory/" class="iconLink">
+                        <img src="../../assets/icons/back.png" class="boxIcon">
+                    </a>
+                </div>
+                
                 <?php
                     $table = loadItems();
+
+                    
 
                     while($row = mysqli_fetch_assoc($table)) {
                         echo 
@@ -36,6 +46,7 @@
                     }
                 ?>
             </div>
+
         </div>
     </main>
 </body>

@@ -19,6 +19,12 @@
     <main>
         <div class="mainWrapper">
             <div class="mainContainer">
+                <div class="panelBox">
+                    <h1 class="panelTitle">Back</h1>
+                    <a href="../dashboard/" class="iconLink">
+                        <img src="../../assets/icons/back.png" class="boxIcon">
+                    </a>
+                </div>
                 <?php
                         $table = loadItems();
 
