@@ -133,3 +133,13 @@ button:hover            {
     margin: .8rem 0;
     text-decoration: none;
 }
+
+.redText            {
+    color: red;
+    font-weight: 600;
+}
+
+.greenText            {
+    color: greenyellow;
+    font-weight: 600;
+}

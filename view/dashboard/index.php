@@ -27,7 +27,7 @@
 
                 <div class="panelBox">
                     <h1 class="panelTitle">Vault</h1>
-                    <a href="" class="iconLink">
+                    <a href="../vault/" class="iconLink">
                         <img src="../../assets/icons/vault.png" class="boxIcon">
                     </a>
                 </div>
