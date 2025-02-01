@@ -20,6 +20,11 @@
         <div class="mainWrapper">
             <div class="mainContainer">
 
+                <form action="../../includes/control/handleSearch.php" method="GET">
+                    <input type="text" placeholder="Search" name="search"><br>
+                    <button>Search</button>
+                </form>
+
                 <div class="panelBox">
                     <h1 class="panelTitle">Back</h1>
                     <a href="../inventory/" class="iconLink">

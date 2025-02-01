@@ -21,7 +21,7 @@ header              {
 .panelBox           {
     color: black;
     width: 10rem;
-    height: 13rem;
+    height: max-content;
     padding: .4rem;
     margin: .2rem;
     border: thin solid #ffffff8a;
@@ -44,7 +44,8 @@ header              {
 }
 
 .itemIcon            {
-    height: 5.4rem;
+    height: 6rem;
+    width: 9rem;
     padding: .5rem;
 }
 

@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <?php include_once '../../includes/packages/isLogged.php' ?>
-<?php include_once '../../includes/model/loadItems.php' ?>
+<?php include_once '../../includes/model/loadSearch.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +19,6 @@
     <main>
         <div class="mainWrapper">
             <div class="mainContainer">
-
-                <form action="../../includes/control/handleSearch.php" method="GET">
-                    <input type="text" placeholder="Search" name="search"><br>
-                    <button>Search</button>
-                </form>
-
                 <div class="panelBox">
                     <h1 class="panelTitle">Back</h1>
                     <a href="../dashboard/" class="iconLink">
@@ -32,7 +26,7 @@
                     </a>
                 </div>
                 <?php
-                        $table = loadItems();
+                        $table = loadSearch($_GET['search']);
 
                         while($row = mysqli_fetch_assoc($table)) {
                             echo 
