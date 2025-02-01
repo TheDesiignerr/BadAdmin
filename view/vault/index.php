@@ -2,6 +2,8 @@
 <?php include_once '../../includes/packages/isLogged.php' ?>
 <?php include_once '../../includes/model/loadVault.php' ?>
 <?php include_once '../../includes/model/loadIncome.php' ?>
+<?php include_once '../../includes/model/loadOutcome.php' ?>
+<?php include_once '../../includes/model/loadBalance.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,10 +33,10 @@
                         <th>Date</th>
                     </tr>
                     <tr>
-                        <th><span class="greenText">Total <?php echo loadIncome() ?> EGP</span></th>
-                        <th><span class="greenText"></span></th>
-                        <th><span class="redText">Total</span></th>
-                        <th><span class="redText">EGP</span></th>
+                        <th style="background: #087d00;"><span class="greenText">Total <?php echo loadIncome() ?> EGP</span></th>
+                        <th style="background: #7d0000;"><span class="redText">Total <?php echo loadOutcome() ?> EGP</span></th>
+                        <th style="background:rgb(90, 90, 90);">Total <?php echo loadBalance() ?> EGP</th>
+                        <th style="background:rgb(90, 90, 90);">All Time</th>
                     </tr>
                     <?php
                     $table = loadVault();

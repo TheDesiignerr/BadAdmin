@@ -43,7 +43,7 @@
 
                 <div class="panelBox">
                     <h1 class="panelTitle">Notes</h1>
-                    <a href="" class="iconLink">
+                    <a href="../notes/" class="iconLink">
                         <img src="../../assets/icons/notes.png" class="boxIcon">
                     </a>
                 </div>
@@ -59,7 +59,7 @@
 
                 <div class="panelBox">
                     <h1 class="panelTitle">Buy</h1>
-                    <a href="" class="iconLink">
+                    <a href="../buy/" class="iconLink">
                         <img src="../../assets/icons/buy.png" class="boxIcon">
                     </a>
                 </div>
