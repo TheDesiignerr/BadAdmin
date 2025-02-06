@@ -20,30 +20,46 @@
         <div class="mainWrapper">
             <div class="mainContainer">
 
-                    <a href="../dashboard/" class="iconLink" style="font-size: 1.5rem;">go back</a>
+                <a href="../dashboard/" class="iconLink" style="font-size: 1.5rem;">go back</a>
 
                 <table>
-                    <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Date</th>
-                    </tr>
-                    <?php
-                    $table = loadSales();
-                    
-                    while ($row = mysqli_fetch_assoc($table)) {
-                        echo 
-                        '
-                        <tr>
-                            <td>'.$row['itemName'].'</td>
-                            <td>'.$row['itemPrice'].'</td>
-                            <td>'.$row['time'].'</td>
-                        </tr>
-                        '
-                        ;
-                    }
-                    ?>
-                </table>
+<?php
+$table = loadSales();
+$currentDate = null;
+
+while ($row = mysqli_fetch_assoc($table)) {
+    $saleDate = date('Y-m-d', strtotime($row['time'])); // Extract only the date
+    
+    // If a new date is encountered, display a new section header
+    if ($currentDate !== $saleDate) {
+        if ($currentDate !== null) {
+            echo "</table>"; // Close previous table
+        }
+        echo "<br><br><h2 style='color: white;'>$saleDate</h2>";
+        echo "<table border='1'>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Time</th>
+                </tr>
+                ";
+
+        $currentDate = $saleDate;
+    }
+
+    // Display sale record
+    $saleTime = date('H:i:s', strtotime($row['time'])); // Extract time
+    echo "<tr>
+            <td>{$row['itemName']}</td>
+            <td>{$row['itemPrice']}</td>
+            <td>{$saleTime}</td>
+          </tr>";
+}
+
+if ($currentDate !== null) {
+    echo "</table>"; // Close last table
+}
+?>
             </div>
         </div>
     </main>
