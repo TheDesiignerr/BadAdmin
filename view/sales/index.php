@@ -1,6 +1,7 @@
 <?php session_start(); ?>
 <?php include_once '../../includes/packages/isLogged.php' ?>
 <?php include_once '../../includes/model/loadSales.php' ?>
+<?php include_once '../../includes/model/loadSalesByTime.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,6 +37,7 @@ while ($row = mysqli_fetch_assoc($table)) {
             echo "</table>"; // Close previous table
         }
         echo "<br><br><h2 style='color: white;'>$saleDate</h2>";
+        echo "<h2 style='color: white;'>Total: ".loadSalesByTime($saleDate)."</h2>";
         echo "<table border='1'>
                 <tr>
                     <th>Name</th>
